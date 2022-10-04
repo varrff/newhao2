@@ -1,0 +1,37 @@
+{
+  "id": "3652749",
+  "name": "newhao",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "2306764",
+      "name": "BILIBILI_LOGO",
+      "font_class": "bilibili",
+      "unicode": "e6b4",
+      "unicode_decimal": 59060
+    },
+    {
+      "icon_id": "20574667",
+      "name": "可怜",
+      "font_class": "kelian",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "3823836",
+      "name": "J",
+      "font_class": "J",
+      "unicode": "e67c",
+      "unicode_decimal": 59004
+    },
+    {
+      "icon_id": "15559692",
+      "name": "豆瓣",
+      "font_class": "shejiaotubiao-12",
+      "unicode": "e643",
+      "unicode_decimal": 58947
+    }
+  ]
+}
