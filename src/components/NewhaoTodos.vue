@@ -21,7 +21,79 @@ export default {
 </script>
 
 <style scoped>
-.top{
+@media screen {
+  @media (max-width: 450px){
+    .top{
+    color: black;
+    text-align: center;
+    background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);
+    opacity: .9;
+    padding: 2%;
+}
+h1{
+    font-family: 'alifont';
+    /* margin-top: 1vh; */
+    font-size: 1.4rem;
+}
+p{
+  width: 80%;
+  margin: auto;
+  margin-top: 2%;
+  font-size: 1.3vh;
+}
+.list {
+  width: 70%;
+  margin: auto;
+  margin-top: 3%;
+  list-style: none;
+}
+.list li{
+  width: 70%;
+  /* height: 5%; */
+  margin: auto;
+  /* margin-top: 1%; */
+}
+.listdiv{
+  font-size: 1.3vh;
+}
+  }
+  @media(min-width: 450px){
+    .top{
+    color: black;
+    text-align: center;
+    background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);
+    opacity: .9;
+    padding: 2%;
+}
+h1{
+    font-family: 'alifont';
+    /* margin-top: 1vh; */
+    font-size: 1.4rem;
+}
+p{
+  width: 80%;
+  margin: auto;
+  margin-top: 2%;
+  font-size: .9rem;
+}
+.list {
+  width: 70%;
+  margin: auto;
+  margin-top: 3%;
+  list-style: none;
+}
+.list li{
+  width: 70%;
+  /* height: 5%; */
+  margin: auto;
+  /* margin-top: 1%; */
+}
+.listdiv{
+  font-size: 1.3vh;
+}
+  }
+  @media(min-width: 1400px){
+    .top{
     color: black;
     text-align: center;
     background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);
@@ -55,4 +127,6 @@ p{
   font-size: 1.3vh;
 }
 
+  }
+}
 </style>

@@ -19,8 +19,42 @@ export default {
 }
 </script>
 
-<style scoped>
-  div{
+<style leng="less" scoped>
+@media screen {
+  @media (max-width: 450px){
+    div{
+    color: #fff;
+    background:linear-gradient( 135deg, #79F1A4 10%, #0E5CAD 100%);
+  }
+h1{
+  font-size: 3vh;
+  background-clip: text; 
+  -webkit-background-clip: text; 
+}
+p{
+  margin-top: 2vh;
+  font-size: 2vh;
+}
+  }
+  /* 小于1000px的移动端 */
+  @media (min-width: 450px){
+    div{
+    color: #fff;
+    background:linear-gradient( 135deg, #79F1A4 10%, #0E5CAD 100%);
+  }
+h1{
+  font-size: 1.4rem;
+  background-clip: text; 
+  -webkit-background-clip: text; 
+}
+p{
+  margin-top: 2vh;
+font-size: .8rem;
+}
+  }
+/* 超大屏幕 */
+  @media (min-width: 1400px){
+    div{
     color: #fff;
     background: linear-gradient( 135deg, #79F1A4 10%, #0E5CAD 100%);
   }
@@ -32,5 +66,7 @@ h1{
 p{
   margin-top: 2vh;
 font-size: .9vw;
+}
+  }
 }
 </style>

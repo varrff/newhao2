@@ -43,7 +43,175 @@ methods:{
 </script>
 
 <style scoped>
-div{
+@media screen {
+  /* 适配手机 */
+  @media (max-width:450px){
+    div{
+position:relative;
+background-color: #fff;
+color: black;
+}
+h1{
+  /* position:absolute; */
+  /* width: 10rem; */
+  /* right:0%;
+  top:15%; */
+  font-size: 2rem;
+  text-align: center;
+}
+img{
+  /* position: absolute;
+  left: 10%;
+  top: 5%; */
+  /* margin-left: 10%; */
+  margin: auto;
+  width: 100%;
+}
+
+.but{
+  position: absolute;
+  right:37%;
+  bottom:5%;
+}
+ul{
+  list-style: none;
+  display: flex;
+  position: absolute;
+  left: 25%;
+  bottom: 15%;
+}
+ul li {
+  cursor:pointer;
+}
+.iconfont{
+  margin-left: 1.3vw;
+}
+.icon-J{
+  font-size: 4vh;
+  color: #e6dc29;
+}
+.icon-shejiaotubiao-12{
+  position: relative;
+  top: -10%;
+  font-size: 6vh;
+  color:rgb(27, 184, 79)
+}
+.icon-bilibili{
+  font-size: 4vh;
+  color:#ffb3bf;
+}
+  }
+  /* 适配平板 */
+  @media (min-width:450px){
+    div{
+position:relative;
+background-color: #fff;
+color: black;
+}
+h1{
+  position:absolute;
+  /* width: 2rem; */
+  right:8%;
+  top:15%;
+  font-size: 2rem;
+}
+img{
+  /* position: absolute;
+  left: 10%;
+  top: 5%; */
+  margin-left: 10%;
+  width: 50%;
+}
+
+.but{
+  position: absolute;
+  right:18%;
+  top:50%;
+}
+ul{
+  list-style: none;
+  display: flex;
+  position: absolute;
+  left: 17%;
+  top: 80%;
+}
+ul li {
+  cursor:pointer;
+}
+.iconfont{
+  margin-left: 1.3vw;
+}
+.icon-J{
+  font-size: 4vh;
+  color: #e6dc29;
+}
+.icon-shejiaotubiao-12{
+  position: relative;
+  top: -10%;
+  font-size: 5vh;
+  color:rgb(27, 184, 79)
+}
+.icon-bilibili{
+  font-size: 4vh;
+  color:#ffb3bf;
+}
+  }
+    /* 适配大屏幕 */
+    @media (min-width: 1000px){
+    div{
+position:relative;
+background-color: #fff;
+color: black;
+}
+h1{
+  position:absolute;
+  width: 20vw;
+  right:0%;
+  top:15%;
+  font-size: 1.8vw;
+}
+img{
+  position: absolute;
+  left: -5%;
+  /* top: 5%; */
+  width: 50%;
+}
+
+.but{
+  position: absolute;
+  right:17%;
+  top:45%;
+}
+ul{
+  list-style: none;
+  display: flex;
+  position: absolute;
+  left:13%;
+  top: 75%;
+}
+ul li {
+  cursor:pointer;
+}
+.iconfont{
+  margin-left: 1.3vw;
+}
+.icon-J{
+  font-size: 4vh;
+  color: #e6dc29;
+}
+.icon-shejiaotubiao-12{
+  position: relative;
+  top: -12%;
+  font-size: 6vh;
+  /* color:rgb(27, 184, 79) */
+}
+.icon-bilibili{
+  font-size: 4vh;
+  color:#ffb3bf;
+}
+  }
+  @media (min-width:1400px){
+    div{
 position:relative;
 background-color: #fff;
 color: black;
@@ -66,13 +234,14 @@ img{
 .but{
   position: absolute;
   right:25%;
-  top:40%;
+  top:50%;
+  font-size: 2rem;
 }
 ul{
   list-style: none;
   display: flex;
   position: absolute;
-  left: 17%;
+  left: 57%;
   top: 80%;
 }
 ul li {
@@ -94,5 +263,7 @@ ul li {
 .icon-bilibili{
   font-size: 4vh;
   color:#ffb3bf;
+}
+  }
 }
 </style>

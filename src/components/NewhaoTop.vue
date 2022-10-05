@@ -13,7 +13,6 @@
       <button @click="miaoshu" v-show="!shuru">+</button>
       <div id="el-input"><el-input v-if="shuru" @blur="quxiao"  ref='inp' @keyup.enter.native="yanzheng" v-model="miaoshuValue" :placeholder="tixing"></el-input></div>
       <p id="tixing" v-show="!shuru">如果认识我，可以在此添加新的标签></p>
-      <!-- <p id="tixing" v-show="!shuru">此功能等待上线，等我学完后端服务器哈哈哈</p> -->
     </div>
   </template>
   <script>
@@ -142,8 +141,215 @@
   }
   }
   </script>
-  <style scoped>
-  div{
+  <style leng="less" scoped>
+ @media screen {
+  @media(max-width: 1000px){
+    div{
+      position: relative;
+      color: #fff;
+  }
+  h1{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 70%;
+      text-align: center;
+      letter-spacing: .1vw;
+      color: #fff;
+  }
+  #kaitouzi{
+      background-image: linear-gradient(75deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 33.33%, rgba(255, 255, 255, 0) 66.67%, rgba(255, 255, 255, 0) 100%);
+      background-size: 300% 100%;
+      background-position-x: 100%;
+      background-clip: text; 
+      -webkit-background-clip: text; 
+      color:transparent;
+      animation: 3s kaitouzi ease-in-out forwards;
+      animation-delay: 7s;
+      font-size: 2vw;
+  }
+  #miaoshuzi{
+     /* font-family: 'alixuanku'; */
+     /* font-family: Georgia, 'Times New Roman', Times, serif; */
+     font-weight: 200;
+     font-size: 3vw;
+     background-image: linear-gradient( 135deg, #79F1A4 10%, #0E5CAD 100%);
+     background-clip: text; 
+     -webkit-background-clip: text; 
+     color: transparent;
+  }
+  video{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      margin: 0 auto;
+      width: 100%;
+  }
+  img {
+    position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      margin: 0 auto;
+      width: 95%;
+      animation: 2s imgtop ease-in-out forwards;
+      animation-delay: 2s;
+      opacity: 1;
+      /* transform: scale(0); */
+  }
+  button {
+    display: block;
+    width: 50px;
+    font-weight: 200;
+    color: #fff;
+    height: 50px;
+    position:absolute;
+    bottom: 5vh;
+    right: 5vw;
+    font-size: 5vh;
+    background-color: transparent;
+    border: none;
+    z-index: 2;
+    transition:all 1s;
+    animation: 5s jiantou-op forwards;
+    opacity: 0;
+    animation-delay: 4.5s;
+    cursor:pointer;
+  }
+  #tixing{
+  font-size: .7vw;
+  position:absolute;
+  bottom: 5.3vh;
+  right: 7vw;
+  animation: 5s tixing-op infinite;
+  opacity: 0;
+  animation-delay: 11s;
+}
+#el-input{
+  position: absolute;
+  bottom: 6vh;
+  right: 9vh;
+  width: 20vh;
+  height: 3vh;
+}
+#biaoqian{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-size: .3rem;
+}
+#biaoqian span{
+  position: absolute;
+  font-size: .3rem;
+  transition: all 1s ease-in-out;
+}
+  }
+  @media (min-width:1000px) {
+    div{
+      position: relative;
+      color: #fff;
+  }
+  h1{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 70%;
+      text-align: center;
+      letter-spacing: .1vw;
+      color: #fff;
+  }
+  #kaitouzi{
+      background-image: linear-gradient(75deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 33.33%, rgba(255, 255, 255, 0) 66.67%, rgba(255, 255, 255, 0) 100%);
+      background-size: 300% 100%;
+      background-position-x: 100%;
+      background-clip: text; 
+      -webkit-background-clip: text; 
+      color:transparent;
+      animation: 3s kaitouzi ease-in-out forwards;
+      animation-delay: 7s;
+      font-size: 3vw;
+  }
+  #miaoshuzi{
+     /* font-family: 'alixuanku'; */
+     /* font-family: Georgia, 'Times New Roman', Times, serif; */
+     font-weight: 200;
+     font-size: 1.3rem;
+     background-image: linear-gradient( 135deg, #79F1A4 10%, #0E5CAD 100%);
+     background-clip: text; 
+     -webkit-background-clip: text; 
+     color: transparent;
+  }
+  video{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      margin: 0 auto;
+      width: 100%;
+  }
+  img {
+    position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      margin: 0 auto;
+      width: 95%;
+      animation: 2s imgtop ease-in-out forwards;
+      animation-delay: 2s;
+      opacity: 1;
+      /* transform: scale(0); */
+  }
+  button {
+    display: block;
+    width: 50px;
+    font-weight: 200;
+    color: #fff;
+    height: 50px;
+    position:absolute;
+    bottom: 5vh;
+    right: 5vw;
+    font-size: 5vh;
+    background-color: transparent;
+    border: none;
+    z-index: 2;
+    transition:all 1s;
+    animation: 5s jiantou-op forwards;
+    opacity: 0;
+    animation-delay: 4.5s;
+    cursor:pointer;
+  }
+  #tixing{
+  font-size: .7vw;
+  position:absolute;
+  bottom: 5.3vh;
+  right: 7vw;
+  animation: 5s tixing-op infinite;
+  opacity: 0;
+  animation-delay: 11s;
+}
+#el-input{
+  position: absolute;
+  bottom: 6vh;
+  right: 9vh;
+  width: 20vh;
+  height: 3vh;
+}
+#biaoqian{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-size: 1.2rem;
+}
+#biaoqian span{
+  position: absolute;
+  transition: all 1s ease-in-out;
+}
+  }
+  @media (min-width:1400px) {
+    div{
       position: relative;
       color: #fff;
   }
@@ -243,6 +449,8 @@
   position: absolute;
   transition: all 1s ease-in-out;
 }
+  }
+ }
   @keyframes kaitouzi {
     50%{
       background-position-x: 0%;
@@ -257,18 +465,6 @@
       }
     }
     @keyframes jiantou-op{
-      /* 0%{        
-        opacity: 1;
-        transform: scale(1,1);
-      }
-      50%{
-        opacity: 1;
-        transform: scale(2,2);
-      }
-      100%{
-        opacity: 1;
-        transform: scale(1,1); 
-      }*/
       to{
         opacity: 1;
       }
@@ -281,9 +477,6 @@
       }
     }
     @keyframes imgtop {
-      75%{
-        /* transform: scale(5); */
-      }
       100%{
         opacity: 0;
 
