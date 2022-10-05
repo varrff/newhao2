@@ -219,13 +219,13 @@
     cursor:pointer;
   }
   #tixing{
-  font-size: .7vw;
+  font-size: 2vh;
   position:absolute;
-  bottom: 5.3vh;
+  bottom: 8vh;
   right: 7vw;
   animation: 5s tixing-op infinite;
   opacity: 0;
-  animation-delay: 11s;
+  animation-delay: 6s;
 }
 #el-input{
   position: absolute;
@@ -328,7 +328,7 @@
   right: 7vw;
   animation: 5s tixing-op infinite;
   opacity: 0;
-  animation-delay: 11s;
+  animation-delay: 6s;
 }
 #el-input{
   position: absolute;
@@ -371,7 +371,7 @@
       -webkit-background-clip: text; 
       color:transparent;
       animation: 3s kaitouzi ease-in-out forwards;
-      animation-delay: 7s;
+      animation-delay: 6s;
       font-size: 2vw;
   }
   #miaoshuzi{
