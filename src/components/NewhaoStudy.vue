@@ -72,14 +72,14 @@ font-size: 4rem;
 }
 h1{
     margin-top: 5%;
-    font-size: 2.2vh;
+    font-size: 4vh;
     background-image: linear-gradient( 135deg, #79F1A4 10%, #0E5CAD 100%);
      background-clip: text; 
      -webkit-background-clip: text; 
      color: transparent;
 }
 p{
-    font-size: 1vw;
+    font-size: 2vh;
     width: 85%;
     margin: auto;
     margin-top: 3%;

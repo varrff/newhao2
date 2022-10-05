@@ -56,7 +56,7 @@ h1{
   /* width: 10rem; */
   /* right:0%;
   top:15%; */
-  font-size: 2rem;
+  font-size: 4vh;
   text-align: center;
 }
 img{
