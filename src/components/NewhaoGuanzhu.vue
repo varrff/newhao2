@@ -235,7 +235,7 @@ img{
   position: absolute;
   right:25%;
   top:50%;
-  font-size: 2rem;
+  /* font-size: 2rem; */
 }
 ul{
   list-style: none;
