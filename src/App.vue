@@ -300,7 +300,7 @@ export default {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Courier New', Courier, monospace;
+  font-family:"Arial","Microsoft YaHei";
 }
 body{
   background-color: #1f2126;

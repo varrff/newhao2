@@ -4,7 +4,9 @@
     你的下一个关注,<br/>
     何必是大佬</h1>
     <el-button type="primary" @click="live" class="but" round>立即关注</el-button>
-      <img :src="img" alt="">
+      <img src="/images/op1.PNG" v-show="isP==1" alt="">
+      <img src="/images/op2.PNG" v-show="isP==2" alt="">
+      <img src="/images/op3.PNG" v-show="isP==3" alt="">
     <ul>
       <li><span class="iconfont icon-J" @click ="toJ"></span></li>
       <li><span class="iconfont icon-shejiaotubiao-12" @click ="toD"></span></li>
@@ -17,21 +19,24 @@
 export default {
 data(){
   return{
-    isP:true,
+    isP:1,
     img:'/images/op1.PNG',
     web:'https://okjk.co/8TJEj1'
   }
 },
 methods:{
   toJ(){
+    this.isP = 1
     this.web = 'https://okjk.co/8TJEj1'
     this.img = "/images/op1.PNG"
   },
   toD(){
+    this.isP = 2
     this.web = 'https://www.douban.com/people/190819556/?_i=3324722LkWkaot'
     this.img = "/images/op2.PNG"
   },
   toB(){
+    this.isP = 3
     this.web =  "https://b23.tv/nrOeYcs"
     this.img = "/images/op3.PNG"
   },
